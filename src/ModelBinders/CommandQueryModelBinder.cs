@@ -20,6 +20,7 @@ public class CommandQueryModelBinder : IModelBinder
 
         //Deserilaize body content to model instance  
         var modelType = bindingContext.ModelMetadata.UnderlyingOrModelType;
+        if (string.IsNullOrWhiteSpace(valueFromBody)) valueFromBody = "{}";
         var modelInstance = JsonSerializer.Deserialize(valueFromBody, modelType)??Activator.CreateInstance(modelType);
         
         var props = modelType.GetProperties().Where(
