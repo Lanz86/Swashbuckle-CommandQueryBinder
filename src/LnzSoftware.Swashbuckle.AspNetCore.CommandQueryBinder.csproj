@@ -4,6 +4,11 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Swashbuckle CommandQueryBinder</Title>
+    <Authors>Antonio Lanzolla</Authors>
+    <PackageProjectUrl>https://github.com/Lanz86/Swashbuckle-CommandQueryBinder</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Lanz86/Swashbuckle-CommandQueryBinder</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
